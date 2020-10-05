@@ -151,19 +151,4 @@ function timerStopFunction() {
     clearInterval(theTimer);
 }
 
-// function timer() {
-//     let timer = document.getElementById('timer')
-//     let time = 0
-
-//     let ticker = setInterval(function() {
-//         timer.innerHTML = time
-//         time++;
-//     }, 1000)
-// }
-// timer();
-
-// function tickerStopFunction() {
-//     clearInterval(timer);
-// }
-
 start();
