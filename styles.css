@@ -16,7 +16,7 @@ p {
   --puzzle-gap: 1px;
   --puzzle-frag-width: calc(var(--puzzle-width) / var(--puzzle-col));
   --puzzle-frag-height: calc(var(--puzzle-height) / var(--puzzle-row));
-  --puzzle-img: url(http://imsphotos.s3.amazonaws.com/IMS-Facility/Pagoda/2-PagodayardofbricksHR.jpg);
+  --puzzle-img: url(/john-nail.jpeg);
   display: flex;
   flex-wrap: wrap;
   width: calc(
@@ -35,7 +35,7 @@ p {
   margin: var(--puzzle-gap);
   background: var(--puzzle-img) var(--x-offset) var(--y-offset) /
     var(--puzzle-width) var(--puzzle-height) no-repeat;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .main-img {
   margin: 0 auto;
