@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.puzzle {
+  --puzzle-width: 16rem;
+  --puzzle-height: 24rem;
+  --puzzle-row: 7;
+  --puzzle-col: 8;
+  --puzzle-gap: 1px;
+  --puzzle-frag-width: calc(var(--puzzle-width) / var(--puzzle-col));
+  --puzzle-frag-height: calc(var(--puzzle-height) / var(--puzzle-row));
+  --puzzle-img: url(http://imsphotos.s3.amazonaws.com/IMS-Facility/Pagoda/2-PagodayardofbricksHR.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(
+    var(--puzzle-width) + calc(var(--puzzle-col) * var(--puzzle-gap) * 2)
+  );
+  height: calc(
+    var(--puzzle-height) + calc(var(--puzzle-row) * var(--puzzle-gap) * 2)
+  );
+}
+.puzzle .fragment {
+  --x-offset: calc(var(--x) * var(--puzzle-frag-width) * -1);
+  --y-offset: calc(var(--y) * var(--puzzle-frag-height) * -1);
+  width: var(--puzzle-frag-width);
+  height: var(--puzzle-frag-height);
+  order: var(--order);
+  margin: var(--puzzle-gap);
+  background: var(--puzzle-img) var(--x-offset) var(--y-offset) /
+    var(--puzzle-width) var(--puzzle-height) no-repeat;
+  border-radius: 10px;
+}
+.main-img {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main-img img {
+  border-radius: 5px;
+}
+.puzzle-wrapper {
+  width: 100%;
+}
+.puzzle {
+  margin: 0 auto;
+}
+.end {
+  visibility: hidden;
+  text-align: center;
+  margin: 0 auto;
+}

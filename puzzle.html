@@ -1,107 +1,36 @@
-<div class="puzzle-wrapper">
-<div class="puzzle"></div>
-<!-- Puzzle Block-->
-<div class="end" id="share">
-<div class="timer">
-<h4 class="heading-text">Congratulations! You completed the puzzle in
-<label id="minutes">00</label>:<label id="seconds">00</label><span>&nbsp;seconds</span>
-</h4>
-<div class="social">
-<p>Share this puzzle, See who can beat your time</p>
-<div class="buttons">
-<a href="#"><img alt="" src="https://www.flaticon.com/svg/static/icons/svg/254/254406.svg" width="30px" />
-</a><a>
-</a><a href="#"><img alt="" src="https://www.flaticon.com/svg/static/icons/svg/733/733603.svg" width="30px" /></a>
-<a href="#"><img alt="" src="https://www.flaticon.com/svg/static/icons/svg/1051/1051333.svg" width="30px" /></a>
-</div>
-</div>
-</div>
-</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/Draggable.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.5/dat.gui.min.js'></script>
-<script src="#"></script>
-<style>
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-    margin: 0;
-    padding: 0;
-    }
-    .puzzle {
-    --puzzle-width: 16rem;
-    --puzzle-height: 24rem;
-    --puzzle-row: 7;
-    --puzzle-col: 8;
-    --puzzle-gap: 1px;
-    --puzzle-frag-width: calc(var(--puzzle-width) / var(--puzzle-col));
-    --puzzle-frag-height: calc(var(--puzzle-height) / var(--puzzle-row));
-    --puzzle-img: url(http://imsphotos.s3.amazonaws.com/IMS-Facility/Pagoda/2-PagodayardofbricksHR.jpg);
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(var(--puzzle-width) + calc(var(--puzzle-col) * var(--puzzle-gap) * 2));
-    height: calc(var(--puzzle-height) + calc(var(--puzzle-row) * var(--puzzle-gap) * 2));
-    }
-    .puzzle .fragment {
-    --x-offset: calc(var(--x) * var(--puzzle-frag-width) * -1);
-    --y-offset: calc(var(--y) * var(--puzzle-frag-height) * -1);
-    width: var(--puzzle-frag-width);
-    height: var(--puzzle-frag-height);
-    order: var(--order);
-    margin: var(--puzzle-gap);
-    background: var(--puzzle-img) var(--x-offset) var(--y-offset)/var(--puzzle-width) var(--puzzle-height) no-repeat;
-    border-radius: 10px;
-    }
-    .main-img {
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 20px;
-    }
-    .main-img img {
-    border-radius: 5px;
-    }
-    .puzzle-wrapper {
-    width: 100%;
-    }
-    .puzzle {
-    margin: 0 auto;
-    }
-    .end {
-    visibility: hidden;
-    text-align: center;
-    margin: 0 auto;
-    }
-    /*
-    .puzzle-wrapper {
-    width: 100%;
-    max-width: 1510px;
-    height: auto;
-    margin: 0 auto;
-    } */
-
-    /* Social */
-    .show {
-    visibility: visible;
-    }
-    .heading-text {
-    text-align: center;
-    font-family: 'Teko', sans-serif;
-    font-size: 2;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    }
-    .buttons {
-    margin-top: 10px;
-    }
-    .social&gt;* {
-    margin: 5px 0;
-    }
-.social {text-align: center;}
-
-</style>
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Puzzle</title>
+</head>
+<body>
+    <div class="puzzle-wrapper">
+        <div class="puzzle"></div>
+        <!-- Puzzle Block-->
+        <div class="end" id="share">
+        <div class="timer">
+        <h4 class="heading-text">Congratulations! You completed the puzzle in
+        <label id="minutes">00</label>:<label id="seconds">00</label><span>&nbsp;seconds</span>
+        </h4>
+        <div class="social">
+        <p>Share this puzzle, See who can beat your time</p>
+        <div class="buttons">
+        <a href="#"><img alt="" src="https://www.flaticon.com/svg/static/icons/svg/254/254406.svg" width="30px" />
+        </a><a>
+        </a><a href="#"><img alt="" src="https://www.flaticon.com/svg/static/icons/svg/733/733603.svg" width="30px" /></a>
+        <a href="#"><img alt="" src="https://www.flaticon.com/svg/static/icons/svg/1051/1051333.svg" width="30px" /></a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/Draggable.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.5/dat.gui.min.js'></script>
+        <script src="/main.js"></script>
+        </div>
+        </div>
+</body>
+</html>
